@@ -1,0 +1,2 @@
+# CopyCat
+Copying the website
