@@ -1,0 +1,128 @@
+.allLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0px;
+    margin: 0px auto;
+    height: 100vh;
+}
+
+.todayhome{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30pt;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+.login_area{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    outline-color: skyblue;
+    border-radius: 4px;
+    border-width: 1px;
+}
+
+.btn.btn-primary_login{
+    width: 300px;
+    height: 52px;
+    color: white;
+    background-color: #519ecf;
+    border-color: #519ecf;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px 0px;
+    padding: 15px 10px;
+}
+
+.btn.btn-primary_order{
+    width: 300px;
+    height: 52px;
+    color: white;
+    background-color: #519ecf;
+    border-color: #519ecf;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.login_area.error,
+.order_area.error,
+.number_area.error{
+    border-color : red;
+    outline-color: red;
+    border-radius: 4px;
+    margin: 0px;
+}
+
+
+.logincomponent{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+
+.loginproblem{
+    text-decoration: none;
+    color: #c3cad1;
+    margin-top: 24px;
+    font-size: 14px;
+}
+
+.order_area{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    outline-color: skyblue;
+    margin-bottom: 10px;
+}
+.number_area{
+    width: 300px;
+    height: 50px;
+    padding: 15px;
+    outline-color: skyblue;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.loginelement{
+    margin: 20px;
+}
+
+.login_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orderlist{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.line {
+    border: non;
+    border-top:1px solid black;
+    width: 300px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+
+.again{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.resetting{
+    margin-right: 15px;
+}
