@@ -7,13 +7,13 @@ function EmailButton({userEmail, error}){
     const debouncedUserEmail = useDebounce(userEmail, 300);
     
 
-    const sendVerificationEmail = (debouncedUserEmail) => {
+    const sendVerificationEmail = (email) => {
         const templateParams = {
-            to_email : debouncedUserEmail,
+            to_email : email,
             from_name: "Jiwoong",
             message: "인증됐습니다."
         };
-        console.log(debouncedUserEmail);
+        console.log(email);
 
         emailjs.send(
             'test-service',
@@ -31,7 +31,7 @@ function EmailButton({userEmail, error}){
     };
 
     const handleVerification = () => {
-        sendVerificationEmail();
+        sendVerificationEmail(debouncedUserEmail);
     };
 
     return (
