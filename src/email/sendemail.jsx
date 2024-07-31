@@ -1,14 +1,19 @@
-import React, {useState} from "react";
+import React, { useState,useEffect } from "react";
 import emailjs from 'emailjs-com';
+import useDebounce from "../debounce";
 
 function EmailButton({userEmail, error}){
     const [isEmailSent, setIsEmailSent] = useState(false);
-    const sendVerificationEmail = () => {
+    const debouncedUserEmail = useDebounce(userEmail, 300);
+    
+
+    const sendVerificationEmail = (debouncedUserEmail) => {
         const templateParams = {
-            to_email : userEmail,
+            to_email : debouncedUserEmail,
             from_name: "Jiwoong",
             message: "인증됐습니다."
         };
+        console.log(debouncedUserEmail);
 
         emailjs.send(
             'test-service',
